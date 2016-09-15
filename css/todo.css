@@ -1,0 +1,106 @@
+div#todo-container {
+  width: 420px;
+  margin-top: 50px;
+}
+
+input#new-todo {
+  border: solid gray 1px;
+  padding-left: 30px;
+  font-size: 18px;
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.control-panel {
+  height: 30px;
+  width: 100%;
+  border: brown solid 1px;
+  margin-bottom: -1px;
+  box-sizing: border-box;
+}
+
+.control-panel > input[type="checkbox"] {
+  margin-right: 7px;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.control-panel > span {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 3px;
+  height: 18px;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+.control-panel > span:hover {
+  border-color: grey;
+}
+
+.todo-example {
+  height: 40px;
+  width: 100%;
+  border: brown solid 1px;
+  margin-bottom: -1px;
+  box-sizing: border-box;
+  display: none;
+  position: relative;
+}
+
+.todo-example > span {
+  line-height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.todo-example > input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+img.close {
+  height: 22px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  position: absolute;
+  right: 4px;
+  top: 8px;
+}
+
+img.close:hover {
+  border: solid red 1px;
+}
+
+.todo-note {
+  display: block;
+}
+
+.todo-note.completed > span {
+  text-decoration: line-through;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-show {
+  display: block;
+}
+
+.h-centered {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+

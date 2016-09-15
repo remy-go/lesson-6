@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IT Mokyklos užrašai</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/todo.css">
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1>IT Mokyklos užrašai</h1>
+      </header>
+        <nav>
+          <a href="">
+            <div class="menu"></div>
+          </a>
+          <a href="">
+            <div class="menu"></div>
+          </a>
+        </nav>
+        <div id="content">
+
+          <h2>Užduočių sąrašas</h2>
+
+          <div id="todo-container" class="h-centered">
+            <form id="input-form" onsubmit="return false">
+              <input type="text" id="new-todo" placeholder="Nauja užduotis">
+            </form>
+            <div class="control-panel">
+             <input type="checkbox"> 
+             <span class="control-button">Liko 0</span>
+             <span class="control-button">Visos</span>
+             <span class="control-button">Nebaigtos</span>
+             <span class="control-button">Baigtos</span>
+             <span class="control-button">Šalinti baigtas</span>
+            </div>
+
+            <div class="todo-example">
+             <input type="checkbox"> 
+             <span class="note-field"></span>
+             <img class="close" src="images/close_icon.svg">
+            </div>
+          </div>
+
+
+        </div>
+        <div style="clear: both;"></div>
+      <footer>
+        <div>2016</div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/todos.js"></script>
+
+  </body>
+</html>
