@@ -24,16 +24,14 @@
           <h2>Užduočių sąrašas</h2>
 
           <div id="todo-container" class="h-centered">
-            <form id="input-form" onsubmit="return false">
-              <input type="text" id="new-todo" placeholder="Nauja užduotis">
-            </form>
+            <input type="text" id="new-todo" placeholder="Nauja užduotis">
             <div class="control-panel">
-             <input type="checkbox"> 
-             <span class="control-button">Liko 0</span>
-             <span class="control-button">Visos</span>
-             <span class="control-button">Nebaigtos</span>
-             <span class="control-button">Baigtos</span>
-             <span class="control-button">Šalinti baigtas</span>
+              <input type="checkbox"> 
+              <span>Liko 0</span>
+              <span class="control-button pressed" id="all">Visos</span>
+              <span class="control-button" id="uncompleted">Nebaigtos</span>
+              <span class="control-button" id="completed">Baigtos</span>
+              <span class="control-button" id="remove-completed">Šalinti baigtas</span>
             </div>
 
             <div class="todo-example">

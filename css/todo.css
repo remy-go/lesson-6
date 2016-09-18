@@ -5,6 +5,7 @@ div#todo-container {
 
 input#new-todo {
   border: solid gray 1px;
+  border-bottom: 0;
   padding-left: 30px;
   font-size: 18px;
   height: 40px;
@@ -34,13 +35,18 @@ input#new-todo {
   margin-left: 3px;
   height: 18px;
   text-align: center;
+  padding: 0 1px;
   font-size: 13px;
   border: 1px solid;
   border-radius: 2px;
 }
 
-.control-panel > span:hover {
+.control-panel > .control-button:hover {
   border-color: grey;
+}
+
+.control-panel .pressed {
+  background-color: silver;
 }
 
 .todo-example {
@@ -90,17 +96,8 @@ img.close:hover {
   text-decoration: line-through;
 }
 
-.display-none {
-  display: none;
-}
-
-.display-show {
-  display: block;
-}
-
 .h-centered {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
-
